@@ -14,10 +14,10 @@ async function main() {
   dotenv.config();
 
   app.use(express.json());
-  app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(cookieParser());
   app.use("/auth", authRouter);
+
 
   const CHECKBOX_COUNT = 5000;
   const CHECKBOX_STATE_KEY = "checkbox-state";
@@ -77,6 +77,8 @@ async function main() {
     });
   });
 
+
+  
   app.use(express.static("./public"));
   app.get("/health", (req, res) => {
     res.json({
