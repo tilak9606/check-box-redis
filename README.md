@@ -1,6 +1,6 @@
 # 10,000 Checkboxes
 
-A real-time collaborative checkbox grid with 1000 checkboxes, built with **WebSocket** and **Redis**. Features an authentication layer for access control.
+A real-time collaborative checkbox grid with 10,000 checkboxes, built with **WebSocket** and **Redis**. Features an authentication layer for access control.
 
 **Live Demo:** [https://check-box-redis.onrender.com](https://check-box-redis.onrender.com)
 
@@ -8,7 +8,7 @@ A real-time collaborative checkbox grid with 1000 checkboxes, built with **WebSo
 
 ## Project Overview
 
-1000 Checkboxes is a real-time collaborative application where multiple users can simultaneously interact with a grid of 10,000 checkboxes. Changes made by any user are instantly synchronized across all connected clients using WebSocket connections. The application uses Redis for state persistence and pub/sub messaging, ensuring scalability across multiple server instances. A JWT-based authentication layer controls access to the grid.
+10,000 Checkboxes is a real-time collaborative application where multiple users can simultaneously interact with a grid of 10,000 checkboxes. Changes made by any user are instantly synchronized across all connected clients using WebSocket connections. The application uses Redis for state persistence and pub/sub messaging, ensuring scalability across multiple server instances. A JWT-based authentication layer controls access to the grid.
 
 **Key Design Decisions:**
 - **Redis Pub/Sub**: Enables horizontal scaling — multiple server instances can synchronize state across clients
