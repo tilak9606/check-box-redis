@@ -19,7 +19,7 @@ async function main() {
   app.use("/auth", authRouter);
 
 
-  const CHECKBOX_COUNT = 5000;
+  const CHECKBOX_COUNT = 10000;
   const CHECKBOX_STATE_KEY = "checkbox-state";
   const RATE_LIMIT_MS = 5000;
   const checkboxes = new Array(CHECKBOX_COUNT).fill(null);
@@ -78,7 +78,7 @@ async function main() {
   });
 
 
-  
+
   app.use(express.static("./public"));
   app.get("/health", (req, res) => {
     res.json({
